@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light grey background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333333; /* Dark grey text */
+}
+
+/* Container for the cricket over tracker */
+.over-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the balls container */
+.balls-container {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Individual ball styles */
+.ball {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #000000; /* Black border */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  font-size: 18px;
+  background-color: #ffffff; /* White background */
+}
+
+/* Styling for the buttons container */
+.buttons-container {
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+.buttons-container button {
+  background-color: #0a0a23;
+  color: #fff;
+  margin: 3px;
+  padding: 13px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.buttons-container button:hover {
+  background-color:#002ead;
+  transition: 0.5s;
+}
+
+.refresh {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Specific button color styles */
+#button-1, #button-2, #button-3 {
+  background-color: #f0ad4e; /* Orange background */
+  color: #ffffff; /* White text */
+}
+
+#button-4 {
+  background-color: #ffeb3b; /* Yellow background */
+  color: #000000; /* Black text */
+}
+
+#button-5, #button-6 {
+  background-color: #28a745; /* Green background */
+  color: #ffffff; /* White text */
+}
+
+#button-dot {
+  background-color: #d3d3d3; /* Light grey background */
+  color: #000000; /* Black text */
+}
+
+#button-wicket {
+  background-color: #dc3545; /* Red background */
+  color: #ffffff; /* White text */
+}
+
+#button-wide, #button-no {
+  background-color: #6c757d; /* Grey background */
+  color: #ffffff; /* White text */
+}
+
+.buttons-container button:hover, .refresh:hover {
+  opacity: 0.8;
+}
+
+/* Styling for the score displays */
+.score-display,
+.cumulative-score {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffffff; /* White background */
+  /* border: 1px solid #969696; Light grey border */
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000; /* Black text */
+}
+
+/* Styling for the current score display */
+#current-score {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Disabled button styles */
+button:disabled {
+  background-color: #cccccc; /* Light grey background */
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: #cccccc; /* Light grey background */
+}
+
+/* Footer styles */
+.footer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #333333; /* Dark grey text */
+}
+
+b {
+  font-size: large;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  justify-content: space-between;
+}
+
+.overCount, .wicketCount {
+  width: 48%; /* Ensure both inputs take up equal space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 100%; /* Full width on small screens */
+  max-width: 200px; /* Max width to keep button at a reasonable size */
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Media Queries for smaller screens */
+/* Responsive design for smaller screens */
+@media (max-width: 576px) {
+  .overCount, .wicketCount {
+      width: 100%; /* Full width for input fields on small screens */
+  }
+}
+
+
+.btn:hover {
+  /* border: 1px double black; */
+  /* background-color: #3e6cea; */
+  opacity: 0.9;
+}
+
+/* Media Queries for Responsive Design */
+/* @media (min-width: 576px) 
+{
+  .over-container 
+  {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 768px) 
+{
+  .over-container 
+  {
+    max-width: 700px;
+  }
+
+  .buttons-container button 
+  {
+    flex: 1 1 120px;
+  }
+}
+
+@media (min-width: 992px) 
+{
+  .over-container 
+  {
+    max-width: 800px;
+  }
+
+  .buttons-container button 
+  {
+    flex: 1 1 140px;
+  }
+}
+
+@media (min-width: 1200px) 
+{
+  .over-container {
+    max-width: 900px;
+  }
+} */

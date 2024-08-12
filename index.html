@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="cricket_logo.png" type="image/icon type">
+    <title>Cricket Over Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="over-container">
+      <div class="overCounter">
+        <b>Track Overs 
+          <img src="cricket_icon.png" height="5%" width="5%" alt="No Img Found!">
+        </b>
+        <form onsubmit="return setOw()">
+          <div class="container">
+            <input type="number" id="overCount" class="overCount" placeholder="Enter Overs" required>
+            <input type="number" id="wicketCount" class="wicketCount" placeholder="Enter Wickets" required>
+            <button type="submit" class="btn">Done!</button>
+          </div>
+        </form>
+
+      </div>
+      <div id="balls-container" class="balls-container"></div>
+      <div class="buttons-container">
+        <button id="button-1">1</button>
+        <button id="button-2">2</button>
+        <button id="button-3">3</button>
+        <button id="button-4">4</button>
+        <button id="button-5">5</button>
+        <button id="button-6">6</button><br /><br>
+        <button id="button-dot">0</button>
+        <button id="button-wide">Wide</button>
+        <button id="button-no">No Ball</button>
+        <button id="button-wicket">Wicket</button>
+        <div id="score-display" class="score-display"></div>
+        <div id="cumulative-score" class="cumulative-score"></div>
+        <div id="current-score"></div>
+        <br>
+      </div>
+      <button class="refresh" onclick="redirect()">Refresh</button>
+    </div>
+    <div class="footer">
+      Created By : Aaryan Mangukiya
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
