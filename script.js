@@ -56,23 +56,53 @@ function addBall(type) {
   }
 }
 
+//   For Count wide and No ball runs no any check box choice
+
+// function addExtraBall(type) {
+//   if (wickets < wicketCount) {
+//     if (overCount != null) {
+//       const ballsContainer = document.getElementById("balls-container");
+//       const ball = document.createElement("div");
+//       ball.classList.add("ball");
+//       if (type === "wide" || type === "no") {
+//         ball.innerText = type === "wide" ? "Wi1" : "N1";
+//         currentOverScore += 1;
+//         currentScore += 1;
+//       }
+//       ballsContainer.appendChild(ball);
+
+//       updateTeamScore();
+//       displayCurrentScore();
+//     } else {
+//       alert("Please Select Over First!")
+//     }
+//   }
+// }
+
 function addExtraBall(type) {
   if (wickets < wicketCount) {
     if (overCount != null) {
+      const countExtras = document.getElementById("countExtraRuns").checked;
       const ballsContainer = document.getElementById("balls-container");
       const ball = document.createElement("div");
       ball.classList.add("ball");
-      if (type === "wide" || type === "no") {
-        ball.innerText = type === "wide" ? "Wi1" : "N1";
-        currentOverScore += 1;
-        currentScore += 1;
-      }
-      ballsContainer.appendChild(ball);
 
+
+      if (type === "wide" || type === "no") {
+        ball.innerText = type === "wide" ? "Wi" : "N";
+
+        if (countExtras) {
+          currentOverScore += 1;
+          currentScore += 1;
+          ball.innerText += "1";
+        }
+      } 
+      ballsContainer.appendChild(ball);
+      
       updateTeamScore();
       displayCurrentScore();
     } else {
-      alert("Please Select Over First!")
+      alert("Please Select Over First!");
     }
   }
 }
