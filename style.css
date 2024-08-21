@@ -54,7 +54,7 @@ body {
   background-color: #0a0a23;
   color: #fff;
   margin: 3px;
-  padding: 13px 16px;
+  padding: 13px 15px;
   font-size: 16px;
   cursor: pointer;
   border: none;
@@ -120,7 +120,6 @@ body {
   margin-top: 20px;
   padding: 10px;
   background-color: #ffffff; /* White background */
-  /* border: 1px solid #969696; Light grey border */
   border-radius: 5px;
   font-size: 20px;
   font-weight: bold;
@@ -172,6 +171,14 @@ b {
   border-radius: 5px;
 }
 
+/* Additional CSS for checkbox styling */
+.container span {
+  font-size: 14px;
+  color: #333333; /* Dark grey text */
+  margin: 10px 0;
+  display: block;
+}
+
 .btn {
   width: 100%; /* Full width on small screens */
   max-width: 200px; /* Max width to keep button at a reasonable size */
@@ -194,51 +201,6 @@ b {
   }
 }
 
-
 .btn:hover {
-  /* border: 1px double black; */
-  /* background-color: #3e6cea; */
   opacity: 0.9;
 }
-
-/* Media Queries for Responsive Design */
-/* @media (min-width: 576px) 
-{
-  .over-container 
-  {
-    max-width: 600px;
-  }
-}
-
-@media (min-width: 768px) 
-{
-  .over-container 
-  {
-    max-width: 700px;
-  }
-
-  .buttons-container button 
-  {
-    flex: 1 1 120px;
-  }
-}
-
-@media (min-width: 992px) 
-{
-  .over-container 
-  {
-    max-width: 800px;
-  }
-
-  .buttons-container button 
-  {
-    flex: 1 1 140px;
-  }
-}
-
-@media (min-width: 1200px) 
-{
-  .over-container {
-    max-width: 900px;
-  }
-} */
